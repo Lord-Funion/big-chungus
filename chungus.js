@@ -32,7 +32,7 @@ function draw() {
 
     // Body
     ctx.fillStyle = "magenta";
-    ctx.strokeStyle = "black";
+    ctx.strokeStyle = "black"; // Ensure lines are visible
     ctx.beginPath();
     ctx.ellipse(bodyX, bodyY, bodyW / 2, 214 / 2, 0, 0, Math.PI * 2);
     ctx.fill();
