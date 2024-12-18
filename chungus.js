@@ -17,6 +17,14 @@ let pupil = 10;
 let legW = 41;
 let legL = 133;
 
+// Function to draw a line
+function drawLine(x1, y1, x2, y2) {
+    ctx.beginPath();
+    ctx.moveTo(x1, y1);
+    ctx.lineTo(x2, y2);
+    ctx.stroke();
+}
+
 // Function to draw the scene
 function draw() {
     // Clear the canvas
@@ -76,6 +84,14 @@ function draw() {
     ctx.fillStyle = "black";
     ctx.font = "16px Arial";
     ctx.fillText("ME BIG CHUNGUS", 120, 45);
+
+    // Draw lines (ears, nose)
+    drawLine(221, 180, 181, 180); // Nose line
+    drawLine(198, 158, 200, 181); // Nose vertical line
+    drawLine(146, 121, 124, 96);  // Left ear line
+    drawLine(167, 101, 126, 96);  // Left ear line
+    drawLine(269, 83, 234, 103);  // Right ear line
+    drawLine(269, 82, 261, 137);  // Right ear line
 
     // Update eyes for animation
     eyeW += directionW;
